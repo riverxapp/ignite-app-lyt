@@ -1,13 +1,21 @@
-import { Navbar } from "@/components/Navbar";
-import { HeroSection } from "@/components/HeroSection";
+import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import ProjectsSection from "../components/ProjectsSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="relative flex min-h-screen flex-col bg-background">
+    <>
       <Navbar />
-      <main className="flex flex-1 flex-col">
+      <main>
         <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
